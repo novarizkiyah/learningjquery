@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Fade</title>
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#hilang1").click(function(){
+                    $("#magenta").hide(500);
+                });
+                $("#muncul1").click(function(){
+                    $("#magenta").show(300);
+                });
+                $("#toggle1").click(function(){
+                    $("#magenta").toggle(200);
+                });
+                $("#hilang2").click(function(){
+                    $("#greenyellow").fadeOut(300);
+                });
+                $("#muncul2").click(function(){
+                    $("#greenyellow").fadeIn(300);
+                })
+                $("#greenyellow").click(function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <button id="hilang1">Hilang1</button>
+        <button id="muncul1">Muncul1</button>
+        <button id="toggle1">Toggle1</button>
+        <button id="hilang2">Hilang2</button>
+        <button id="muncul2">Muncul2</button>
+        <button id="hilang3">Hilang3</button>
+        <button id="muncul3">Muncul3</button>
+        <br><br><br>
+        <div id="magenta" style="background:magenta; height:50px; width:50px; border-radius: 50%;"></div><br>
+        <div id="greenyellow" style="background:greenyellow; height:50px; width:50px; border-radius: 50%;"></div><br>
+        <div style="background:orange; height:50px; width:50px; border-radius: 50%;"></div><br>
+    </body>
+</html>
